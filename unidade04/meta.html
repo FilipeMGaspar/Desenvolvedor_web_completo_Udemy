@@ -16,12 +16,17 @@
     <meta http-equiv="refresh" content="4">
 
     <script>
-        
+        function sorteioNumero(){
+            let resultado = document.getElementById('resultado')
+
+            resultado.innerHTML = Math.random() * 50
+        }
+ 
     </script>
 
     <title>Trabalhando na tag Meta</title>
 </head>
-<body>
-    
+<body onload="sorteioNumero()">
+    <p id="resultado"></p>
 </body>
 </html>
