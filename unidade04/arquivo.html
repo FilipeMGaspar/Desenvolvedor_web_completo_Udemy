@@ -13,15 +13,19 @@
         </style>
         <!-- <link rel="stylesheet" href="style.css"> -->
 
-        <script>
-            function escreverNome(){
-                nome.innerHTML="Filiep"
-            }
+       <script>
+           function escreverNome(){
+               document.getElementById('nome').innerHTML = 'Filipe' 
 
-            window.onload = escreverNome()
-        </script>
+               /*
+                nome.innerHTML = "Curso HTML5 Essencial"
+                window.onload = escreverNome
+               */
+           }
+       </script>
+
     </head>
-    <body>
-        <p id="nome">></p>
+    <body onload="escreverNome()">
+        <p id="nome"></p>
     </body>
 </html>
